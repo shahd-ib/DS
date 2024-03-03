@@ -71,7 +71,26 @@ string removeDuplicates(string s) {
 	}
 	return result;
 }
-
+int scoreOfParentheses(string s) {
+	stack<char>st;
+	map<char, char>mp;
+	mp['('] = ')';
+	mp['{'] = '}';
+	mp['['] = ']';
+	int score = 0;
+	for (int i = 0;i < s.size();i++) {
+		char c = s[i];
+		if (c == '(' || c == '{' || c == '[')
+			st.push(c);
+		else if (!st.empty() && mp[st.top()] == c) {
+			st.pop();
+			score += 1;
+		}			
+		else
+			return -1;
+	}
+	return score;
+}
 int main()
 {
 }
