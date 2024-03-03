@@ -94,7 +94,7 @@ public:
 		if (current->data == value) {
 			head = current->next;
 			free(current);//delete the node from the memory
-			return;// like break(åíÞÝ ÚäÏ åäÇ ãÔ åíßãá)
+			return;// like break(Ã¥Ã­ÃžÃ ÃšÃ¤Ã Ã¥Ã¤Ã‡ Ã£Ã” Ã¥Ã­ÃŸÃ£Ã¡)
 		}
 		while (current->data != value) {
 			previous = current;
@@ -119,7 +119,7 @@ public:
 		if (current->data == value) {
 			head = current->next;
 			free(current);//delete the node from the memory
-			return;// like break(åíÞÝ ÚäÏ åäÇ ãÔ åíßãá)
+			return;// like break(Ã¥Ã­ÃžÃ ÃšÃ¤Ã Ã¥Ã¤Ã‡ Ã£Ã” Ã¥Ã­ÃŸÃ£Ã¡)
 		}
 		while (current->data != value) {
 			previous = current;
